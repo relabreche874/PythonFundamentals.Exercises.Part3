@@ -1,5 +1,5 @@
 def lang_select() :
-    choice = input("Please choose 1-English 2-Japanese 3-Spanish ")
+    int(choice) = input("Please choose 1-English 2-Japanese 3-Spanish ")
     
     if choice == 1 :
         name = input("Please enter your name ")
