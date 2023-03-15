@@ -1,24 +1,20 @@
-def greet(name) :
-    print("Hello", name);
+def lang_select() :
+    choice = input("Please choose 1-English 2-Japanese 3-Spanish ")
     
-def name_input() :
-    name = input("Please enter your name: ")
-    return name
-
-def language_input() :
-    name = input("Please enter your name: ")
-    lang_in = input("Choose English, Japanese, or Spanish ")
-    if lang_in == "English" :
-        print("Hello " + name)
-    elif lang_in == "Japanese" :
-        print ("Konichiwa " + name)
-    elif lang_in == "Spanish" :
-        print("Hola " + name)
+    if choice == 1 :
+        name = input("Please enter your name ")
+        print(f"Hello {name}")
     
+    elif choice == 2 :
+        name = input("お名前を入力してください ")
+        print(f"こんにちは {name}")
+    
+    else :
+        name = input("Por favor, escriba su nombre ")
+        print(f"Hola {name}")
 
-# namae = name_input()
 
-language_input()
+lang_select()
 
 
-# greet(namae)
+
